@@ -108,6 +108,8 @@ console.log(newValue); // == 11
 myDog.removeEventListener(myDogBarklistener);
 
 ```
+You can run the code <a href="https://jsfiddle.net/h17ysrub/4/">here</a>.
+
  You can create your own EventTarget (e.g. Dog) and make that target listen to an Event (e.g. bark) you assign with addEventListener.
  
  You can dispatch an event to the EventTarget (in this case: myDog) with dispatchEvent.
