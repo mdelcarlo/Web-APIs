@@ -79,27 +79,34 @@ class Dog extends EventTarget {
     this._secretBarks = mySecretBarks;
   }
 
-  get secretBarks() { return this._secretBarks; }
+  get secretBarks() {
+    return this._secretBarks;
+  }
 };
 
-let myDog = new Dog(0);
-let value = myDog.secretBarks;  // == 0
+let myDog = new Dog(1);
+let value = myDog.secretBarks;
+console.log(value); // == 1
 
 // assign a 'bark' event listener to myDog that changes _secretBarks from barkCount event param.
 const myDogBarklistener = myDog.addEventListener("bark", function(e) {
-  this._secretBarks = e.barkCount;
+  this._secretBarks = e.detail;
 });
 
 
 // create a 'bark' CustomEvent with an associated value
-let barkEvent = new CustomEvent("bark", { barkCount: 11 });
+let barkEvent = new CustomEvent("bark", {
+  detail: 11
+});
 
 // dispatch a barkEvent on myDog
 myDog.dispatchEvent(barkEvent);
-let newValue = myDog.secretBarks; // == 11
+let newValue = myDog.secretBarks;
+console.log(newValue); // == 11
 
 // remove the bark listener function from myDog EventTarget
-myDog.removeEventListener(myDogBarklistener)
+myDog.removeEventListener(myDogBarklistener);
+
 ```
  You can create your own EventTarget (e.g. Dog) and make that target listen to an Event (e.g. bark) you assign with addEventListener.
  
