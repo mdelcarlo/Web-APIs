@@ -9,22 +9,20 @@ The root of the DOM hierarchy is EventTarget, that is inherited by Node, and oth
 
 The DOM interfaces are:
 
-**EventTarget** – is the root “abstract” class. Objects of that class are never created. It serves as a base, so that all DOM nodes support so-called “events”, we’ll study them later.
+**Node** – serves as a base for DOM nodes. It provides the core tree functionality: parentNode, nextSibling, childNodes and so on (they are getters). There are concrete node classes that inherit from it, namely: Text for text nodes, Element for element nodes and more exotic ones like Comment for comment nodes.
 
-**Node** – is also an “abstract” class, serving as a base for DOM nodes. It provides the core tree functionality: parentNode, nextSibling, childNodes and so on (they are getters). Objects of Node class are never created. But there are concrete node classes that inherit from it, namely: Text for text nodes, Element for element nodes and more exotic ones like Comment for comment nodes.
+**Element** – is a base interface for DOM elements. It provides element-level navigation like nextElementSibling, children and searching methods like getElementsByTagName, querySelector. A browser supports not only HTML, but also XML and SVG. The Element class serves as a base for more specific classes: SVGElement, XMLElement and HTMLElement.
 
-**Element** – is a base class for DOM elements. It provides element-level navigation like nextElementSibling, children and searching methods like getElementsByTagName, querySelector. A browser supports not only HTML, but also XML and SVG. The Element class serves as a base for more specific classes: SVGElement, XMLElement and HTMLElement.
+**HTMLElement** – is finally the basic interface for all HTML elements. It is inherited by various HTML elements:
 
-**HTMLElement** – is finally the basic class for all HTML elements. It is inherited by various HTML elements:
+- **HTMLInputElement** – the interface for ```<input>``` elements,
+- **HTMLBodyElement** – the interface for ```<body>``` elements,
+- **HTMLAnchorElement** – the interface for ```<a>``` elements
 
-- **HTMLInputElement** – the class for <input> elements,
-- **HTMLBodyElement** – the class for <body> elements,
-- **HTMLAnchorElement** – the class for <a> elements
+Let’s consider the DOM object for an ```<input>``` element. It belongs to HTMLInputElement class. It gets properties and methods as a superposition of:
 
-Let’s consider the DOM object for an <input> element. It belongs to HTMLInputElement class. It gets properties and methods as a superposition of:
-
-- **HTMLInputElement** – this class provides input-specific properties.
-- **HTMLElement** – it provides common HTML element methods (and getters/setters).
+- **HTMLInputElement** – provides input-specific properties.
+- **HTMLElement** – provides common HTML element methods (and getters/setters).
 - **Element** – provides generic element methods.
 - **Node** – provides common DOM node properties.
 - **EventTarget** – gives the support for events (to be covered).
