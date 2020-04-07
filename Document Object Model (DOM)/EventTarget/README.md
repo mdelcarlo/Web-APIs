@@ -138,5 +138,5 @@ You can run the code <a href="https://jsfiddle.net/h17ysrub/4/">here</a>.
  
  You can dispatch an event to the EventTarget (in this case: myDog) with dispatchEvent.
 
- After you acomplished the needed tasks, you remove the event listener (e.g. bark) with removeEventListener (A common practice to avoid memory)
+ After you acomplished the needed tasks, you remove the event listener (e.g. bark) with removeEventListener (A common practice to avoid memory leak)
  
