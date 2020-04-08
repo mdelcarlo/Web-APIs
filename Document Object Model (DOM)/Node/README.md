@@ -148,3 +148,17 @@ function removeNode(node)
     node.parentNode && node.parentNode.replaceChild(newNode, node);
 }
 ```
+
+#### Swap two nodes
+```js
+function swap (nodeA, nodeB) {
+    const parentA = nodeA.parentNode;
+    const siblingA = nodeA.nextSibling === nodeB ? nodeA : nodeA.nextSibling;
+
+    // Move `nodeA` to before the `nodeB`
+    nodeB.parentNode.insertBefore(nodeA, nodeB);
+
+    // Move `nodeB` to before the sibling of `nodeA`
+    parentA.insertBefore(nodeB, siblingA);
+};
+```
