@@ -130,7 +130,7 @@ function removeChildNodes(node)
 ```
 
 #### Remove a specific node
-Remove a specific node accesing a parent and using replacing child.
+Remove a specific node accesing a parent and using removeChild.
 
 ```js
 function removeNode(node)
@@ -140,7 +140,7 @@ function removeNode(node)
 ```
 
 #### Replace a specific node
-Replace a specific node accesing a parent and using replacing child.
+Replace a specific node accesing a parent and using replaceChild.
 
 ```js
 function removeNode(node)
