@@ -317,7 +317,7 @@ function getRelativePosition(elementA, elementB) {
 
 Try the code [here](https://jsfiddle.net/keLajq76/1/)
 
-### Insert an element after another
+#### Insert an element after another
 
 ```js
 refEle.parentNode.insertBefore(ele, refEle.nextSibling); // inherited from Node interface
