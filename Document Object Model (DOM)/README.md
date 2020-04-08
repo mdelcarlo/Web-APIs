@@ -15,3 +15,5 @@ The W3C DOM and WHATWG DOM standards are implemented in most modern browsers. Ma
 <a href="./EventTarget/README.md" target="_self">EventTarget</a>
 
 <a href="./Node/README.md" target="_self">Node</a>
+
+<a href="./Window/README.md" target="_self">Window</a>
