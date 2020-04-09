@@ -1,6 +1,6 @@
-# Node
+# ParentNode
 
-The **ParentNode** mixin contains methods and properties that are common to all types of Node objects that can have children. It's implemented by [Element](./../Element/Readme.md), [Document](./../Document/Readme.md), and [DocumentFragment](./../DocumentFragment/Readme.md) objects.
+The **ParentNode** mixin contains methods and properties that are common to all types of Node objects that can have children. It's implemented by [Element](./../Element/README.md), [Document](./../Document/README.md), and [DocumentFragment](./../DocumentFragment/README.md) objects.
 
 ## Properties
 
