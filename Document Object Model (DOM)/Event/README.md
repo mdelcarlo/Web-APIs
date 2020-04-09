@@ -16,7 +16,7 @@ Creates an Event object, returning it to the caller.
 
 ---
 
-Properties
+## Properties
 
 #### Event.bubbles Read only
 A boolean indicating whether or not the event bubbles up through the DOM.
@@ -66,7 +66,9 @@ The name of the event. Case-insensitive.
 #### Event.isTrusted Read only
 Indicates whether or not the event was initiated by the browser (after a user click, for instance) or by a script (using an event creation method, like Event.initEvent).
 
+---
 
+## Methods
 #### Event.composedPath()
 Returns the event’s path (objects on which listeners will be invoked). This does not include nodes in shadow trees if the shadow root was created with its ShadowRoot.mode closed.
 
