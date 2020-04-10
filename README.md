@@ -2,6 +2,8 @@
 A predigested Web APIs guide.
 
 ## APIs
+<a href="./Console/README.md" target="_self">Console</a>
+
 <a href="./Document Object Model (DOM)/README.md" target="_self">Document Object Model (DOM)</a>
 
 <a href="./Geolocation/README.md" target="_self">Geolocation</a>
