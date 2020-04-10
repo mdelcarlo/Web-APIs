@@ -1,4 +1,4 @@
-# Nodelist
+# NodeList
 **NodeList** objects are collections of nodes, usually returned by properties such as Node.childNodes and methods such as document.querySelectorAll().
 
 > Although NodeList is not an Array, it is possible to iterate over it with forEach(). It can also be converted to a real Array using Array.from().
