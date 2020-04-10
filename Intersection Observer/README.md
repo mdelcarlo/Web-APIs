@@ -17,9 +17,9 @@ The **Intersection Observer API** lets code register a callback function that is
 ## Usage
 The Intersection Observer API allows you to configure a callback that is called:
 
-(1) whenever one element, called the target, intersects either the device viewport or a specified element; for the purpose of this API, this is called the root element or root
+1) whenever one element, called the target, intersects either the device viewport or a specified element; for the purpose of this API, this is called the root element or root
 
-(2) and whenever the observer is asked to watch a target for the very first time
+2) and whenever the observer is asked to watch a target for the very first time
 
 Typically, you'll want to watch for intersection changes with regard to the element's closest scrollable ancestor, or, if the element isn't a descendant of a scrollable element, the viewport. To watch for intersection relative to the root element, specify null.
 
