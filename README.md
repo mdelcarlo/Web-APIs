@@ -8,3 +8,5 @@ A predigested Web APIs guide.
 
 <a href="./IndexedDB/README.md" target="_self">IndexedDB</a>
 
+<a href="./Intersection Observer/README.md" target="_self">Intersection Observer</a>
+
