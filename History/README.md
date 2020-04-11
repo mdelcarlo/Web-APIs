@@ -3,7 +3,7 @@ The **History** interface allows manipulation of the browser session history, th
 
 ---
 
-Properties
+## Properties
 The History interface doesn't inherit any property.
 
 #### length | Read only
