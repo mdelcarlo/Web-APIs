@@ -6,6 +6,8 @@ A predigested Web APIs guide.
 
 <a href="./Document Object Model (DOM)/README.md" target="_self">Document Object Model (DOM)</a>
 
+<a href="./Fetch/README.md" target="_self">Fetch</a>
+
 <a href="./Geolocation/README.md" target="_self">Geolocation</a>
 
 <a href="./History/README.md" target="_self">History</a>
