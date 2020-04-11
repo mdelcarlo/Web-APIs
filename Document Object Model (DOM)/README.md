@@ -8,6 +8,8 @@ The W3C DOM and WHATWG DOM standards are implemented in most modern browsers. Ma
 
 ## DOM Interfaces (you should know...)
 
+<a href="./Attr/README.md" target="_self">Attr</a>
+
 <a href="./CharacterData/README.md" target="_self">CharacterData</a>
 
 <a href="./Comment/README.md" target="_self">Comment</a>
