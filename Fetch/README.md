@@ -42,7 +42,7 @@ The request method, e.g., GET, POST.
 
 </details>
 <details><summary>headers</summary>
-Any headers you want to add to your request, contained within a Headers object or an object literal with ByteString values. Note that some names are forbidden.
+Any <a href="./Headers/README.md">headers</a> you want to add to your request, contained within a Headers object or an object literal with ByteString values. Note that some names are forbidden.
 </details>
 <details><summary>body</summary>
 Any body that you want to add to your request: this can be a Blob, BufferSource, FormData, URLSearchParams, USVString, or ReadableStream object. Note that a request using the GET or HEAD method cannot have a body.
