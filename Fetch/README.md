@@ -10,9 +10,9 @@ It also provides a definition for related concepts such as CORS and the HTTP ori
 
 For making a [request](./Request/README.md) and fetching a resource, use the WindowOrWorkerGlobalScope.fetch() method. It is implemented in multiple interfaces, specifically Window and WorkerGlobalScope. This makes it available in pretty much any context you might want to fetch resources in.
 
-The fetch() method takes one mandatory argument, the path to the resource you want to fetch. It returns a Promise that resolves to the Response to that [request](./Request/README.md), whether it is successful or not. You can also optionally pass in an init options object as the second argument (see Request).
+The fetch() method takes one mandatory argument, the path to the resource you want to fetch. It returns a Promise that resolves to the Response to that request, whether it is successful or not. You can also optionally pass in an init options object as the second argument (see [Request](./Request/README.md)).
 
-Once a Response is retrieved, there are a number of methods available to define what the body content is and how it should be handled (see Body).
+Once a Response is retrieved, there are a number of methods available to define what the body content is and how it should be handled (see [Body](./Body/README.md)).
 
 You can create a [request](./Request/README.md) and [response](./Response/README.md) directly using the [Request()](./Request/README.md) and [Response()](./Response/README.md) constructors, but it's uncommon to do this directly. Instead, these are more likely to be created as results of other API actions (for example, FetchEvent.respondWith() from service workers).
 
@@ -45,7 +45,7 @@ The request method, e.g., GET, POST.
 Any <a href="./Headers/README.md">headers</a> you want to add to your request, contained within a Headers object or an object literal with ByteString values. Note that some names are forbidden.
 </details>
 <details><summary>body</summary>
-Any body that you want to add to your request: this can be a Blob, BufferSource, FormData, URLSearchParams, USVString, or ReadableStream object. Note that a request using the GET or HEAD method cannot have a body.
+Any [body](./Body/README.md) that you want to add to your request: this can be a Blob, BufferSource, FormData, URLSearchParams, USVString, or ReadableStream object. Note that a request using the GET or HEAD method cannot have a body.
 </details>
 <details><summary>mode</summary>
 The mode you want to use for the request, e.g., cors, no-cors, or same-origin.
