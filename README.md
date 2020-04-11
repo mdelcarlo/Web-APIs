@@ -8,6 +8,8 @@ A predigested Web APIs guide.
 
 <a href="./Geolocation/README.md" target="_self">Geolocation</a>
 
+<a href="./History/README.md" target="_self">History</a>
+
 <a href="./IndexedDB/README.md" target="_self">IndexedDB</a>
 
 <a href="./Intersection Observer/README.md" target="_self">Intersection Observer</a>
