@@ -18,7 +18,7 @@ Returns a ReadableStream that can be used to read the contents of the Blob.
 #### Blob.text()
 Returns a promise that resolves with a USVString containing the entire contents of the Blob interpreted as UTF-8 text.
 ## Examples
-####Creating a blob
+#### Creating a blob
 The Blob() constructor can create blobs from other objects. For example, to construct a blob from a JSON string:
 
 ```js
