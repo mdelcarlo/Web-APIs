@@ -22,4 +22,6 @@ A predigested Web APIs guide.
 
 <a href="./Intersection Observer/README.md" target="_self">Intersection Observer</a>
 
+<a href="./Notifications/README.md" target="_self">Notifications</a>
+
 <a href="./URLSearchParams/README.md" target="_self">URLSearchParams</a>
