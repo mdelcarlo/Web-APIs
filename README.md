@@ -12,6 +12,8 @@ A predigested Web APIs guide.
 
 <a href="./File/README.md" target="_self">File</a>
 
+<a href="./FormData/README.md" target="_self">FormData</a>
+
 <a href="./Geolocation/README.md" target="_self">Geolocation</a>
 
 <a href="./History/README.md" target="_self">History</a>
@@ -20,3 +22,4 @@ A predigested Web APIs guide.
 
 <a href="./Intersection Observer/README.md" target="_self">Intersection Observer</a>
 
+<a href="./URLSearchParams/README.md" target="_self">URLSearchParams</a>
