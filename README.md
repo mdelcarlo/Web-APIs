@@ -12,6 +12,8 @@ A predigested Web APIs guide.
 
 <a href="./File/README.md" target="_self">File</a>
 
+<a href="./FormData/README.md" target="_self">FormData</a>
+
 <a href="./Geolocation/README.md" target="_self">Geolocation</a>
 
 <a href="./History/README.md" target="_self">History</a>
