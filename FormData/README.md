@@ -56,7 +56,7 @@ formData.getAll('username'); // Returns ["Chris", "Bob"]
 ```
 
 #### Set new values
-```
+```js
 var formData = new FormData(); // Currently empty
 
 formData.set('username', 'Chris');
