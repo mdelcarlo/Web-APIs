@@ -10,6 +10,8 @@ A predigested Web APIs guide.
 
 <a href="./Fetch/README.md" target="_self">Fetch</a>
 
+<a href="./File/README.md" target="_self">File</a>
+
 <a href="./Geolocation/README.md" target="_self">Geolocation</a>
 
 <a href="./History/README.md" target="_self">History</a>
