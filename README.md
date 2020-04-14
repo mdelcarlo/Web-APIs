@@ -36,6 +36,8 @@ A predigested Web APIs guide.
 
 <a href="./History/README.md" target="_self">History</a>
 
+<a href="./HTML Drag and Drop/README.md" target="_self">HTML Drag and Drop</a>
+
 ### I
 
 <a href="./IndexedDB/README.md" target="_self">IndexedDB</a>
