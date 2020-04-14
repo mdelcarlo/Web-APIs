@@ -4,6 +4,8 @@ A predigested Web APIs guide.
 ## APIs
 
 ### B
+<a href="./Batery Status/README.md" target="_self">Batery Status</a>
+
 <a href="./Blob/README.md" target="_self">Blob</a>
 
 ### C
