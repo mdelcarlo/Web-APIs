@@ -54,5 +54,7 @@ A predigested Web APIs guide.
 
 ### W
 
+<a href="./Web Audio/README.md" target="_self">Web Audio</a>
+
 <a href="./Web Workers/README.md" target="_self">Web Workers</a>
 
