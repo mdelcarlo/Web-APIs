@@ -51,3 +51,8 @@ A predigested Web APIs guide.
 ### U
 
 <a href="./URLSearchParams/README.md" target="_self">URLSearchParams</a>
+
+### W
+
+<a href="./Web Workers/README.md" target="_self">Web Workers</a>
+
