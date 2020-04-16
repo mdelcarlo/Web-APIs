@@ -25,3 +25,9 @@ A simple, typical workflow for web audio would look something like this:
 Timing is controlled with high precision and low latency, allowing developers to write code that responds accurately to events and is able to target specific samples, even at a high sample rate. So applications such as drum machines and sequencers are well within reach.
 
 The Web Audio API also allows us to control how audio is spatialized. Using a system based on a source-listener model, it allows control of the panning model and deals with distance-induced attenuation induced by a moving source (or moving listener).
+
+## Examples
+
+#### Boombox
+
+[<img width="813" alt="Captura de Pantalla 2020-04-17 a la(s) 07 50 29" src="https://user-images.githubusercontent.com/20034230/79500176-27325280-8080-11ea-990c-332baa095082.png">](https://jsfiddle.net/87wmed6h/25/)
