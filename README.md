@@ -40,6 +40,8 @@ A predigested Web APIs guide.
 
 ### I
 
+<a href="./Image Capture/README.md" target="_self">Image Capture</a>
+
 <a href="./IndexedDB/README.md" target="_self">IndexedDB</a>
 
 <a href="./Intersection Observer/README.md" target="_self">Intersection Observer</a>
