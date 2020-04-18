@@ -12,6 +12,8 @@ A predigested Web APIs guide.
 
 <a href="./Console/README.md" target="_self">Console</a>
 
+<a href="./Credential Management/README.md" target="_self">Credential Management</a>
+
 <a href="./CSSOM
 /README.md" target="_self">CSS Object Model (CSSOM)
 </a>
