@@ -54,6 +54,10 @@ A predigested Web APIs guide.
 
 <a href="./Notifications/README.md" target="_self">Notifications</a>
 
+### P
+
+<a href="./Permissions/README.md" target="_self">Permissions</a>
+
 ### R
 
 <a href="./Resize Observer/README.md" target="_self">Resize Observer</a>
