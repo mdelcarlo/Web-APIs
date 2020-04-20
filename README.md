@@ -10,6 +10,8 @@ A predigested Web APIs guide.
 
 ### C
 
+<a href="./Canvas/README.md" target="_self">Canvas</a>
+
 <a href="./Console/README.md" target="_self">Console</a>
 
 <a href="./Credential Management/README.md" target="_self">Credential Management</a>
