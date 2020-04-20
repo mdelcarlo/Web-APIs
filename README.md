@@ -9,6 +9,7 @@ A predigested Web APIs guide.
 <a href="./Blob/README.md" target="_self">Blob</a>
 
 ### C
+<a href="./Cache/README.md" target="_self">Cache</a>
 
 <a href="./Canvas/README.md" target="_self">Canvas</a>
 
