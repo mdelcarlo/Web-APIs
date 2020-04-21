@@ -57,6 +57,9 @@ A predigested Web APIs guide.
 
 ### P
 
+<a href="./Performance/README.md" target="_self">Performance</a>
+
+
 <a href="./Permissions/README.md" target="_self">Permissions</a>
 
 ### R
