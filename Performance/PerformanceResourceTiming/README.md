@@ -118,7 +118,7 @@ function calculate_load_times() {
 }
 ```
 
-## Size matters?
+#### Size matters?
 The size of an application's resources can affect an application's performance so getting accurate data on resource size can be important (especially for non-hosted resources). The PerformanceResourceTiming interface has three properties that can be used to obtain size data about a resource. The transferSize property returns the size (in octets) of the fetched resource including the response header fields plus the response payload body. The encodedBodySize property returns the size (in octets) received from the fetch (HTTP or cache), of the payload body, before removing any applied content-codings. decodedBodySize returns the size (in octets) received from the fetch (HTTP or cache) of the message body, after removing any applied content-codings.
 
 The following example demonstrates using these three properties.
