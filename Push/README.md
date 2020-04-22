@@ -8,7 +8,7 @@ For an app to receive push messages, it has to have an active service worker. Wh
 
 The resulting PushSubscription includes all the information that the application needs to send a push message: an endpoint and the encryption key needed for sending data.
 
-The service worker will be started as necessary to handle incoming push messages, which are delivered to the ServiceWorkerGlobalScope.onpush event handler. This allows apps to react to push messages being received, for example, by displaying a notification (using #### ServiceWorkerRegistration.showNotification().)
+The service worker will be started as necessary to handle incoming push messages, which are delivered to the ServiceWorkerGlobalScope.onpush event handler. This allows apps to react to push messages being received, for example, by displaying a notification (using ServiceWorkerRegistration.showNotification().)
 
 Each subscription is unique to a service worker.  The endpoint for the subscription is a unique capability URL: knowledge of the endpoint is all that is necessary to send a message to your application. The endpoint URL therefore needs to be kept secret, or other applications might be able to send push messages to your application.
 
