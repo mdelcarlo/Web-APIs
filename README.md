@@ -64,6 +64,8 @@ A predigested Web APIs guide.
 
 <a href="./Permissions/README.md" target="_self">Permissions</a>
 
+<a href="./Push/README.md" target="_self">Push</a>
+
 ### R
 
 <a href="./Resize Observer/README.md" target="_self">Resize Observer</a>

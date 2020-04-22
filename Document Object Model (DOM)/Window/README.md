@@ -236,9 +236,9 @@ Decodes a string of data which has been encoded using base-64 encoding.
 #### WindowOrWorkerGlobalScope.btoa()
 Creates a base-64 encoded ASCII string from a string of binary data.
 #### WindowOrWorkerGlobalScope.clearInterval()
-Cancels the repeated execution set using #### WindowOrWorkerGlobalScope.setInterval().
+Cancels the repeated execution set using WindowOrWorkerGlobalScope.setInterval().
 #### WindowOrWorkerGlobalScope.clearTimeout()
-Cancels the delayed execution set using #### WindowOrWorkerGlobalScope.setTimeout().
+Cancels the delayed execution set using WindowOrWorkerGlobalScope.setTimeout().
 #### WindowOrWorkerGlobalScope.createImageBitmap()
 Accepts a variety of different image sources, and returns a Promise which resolves to an ImageBitmap. Optionally the source is cropped to the rectangle of pixels originating at (sx, sy) with width sw, and height sh.
 #### WindowOrWorkerGlobalScope.fetch()
