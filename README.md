@@ -78,7 +78,7 @@ A predigested Web APIs guide.
 
 <a href="./Web Audio/README.md" target="_self">Web Audio</a>
 
-<a href="./Web GL/README.md" target="_self">Web GL</a>
+<a href="./Web GL/README.md" target="_self">WebGL</a>
 
 <a href="./Web Workers/README.md" target="_self">Web Workers</a>
 
