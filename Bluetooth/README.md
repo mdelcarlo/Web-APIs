@@ -20,6 +20,14 @@ Represents a GATT Server on a remote device.
 #### BluetoothRemoteGATTService
 Represents a service provided by a GATT server, including a device, a list of referenced services, and a list of the characteristics of this service.
 
+## Methods
+#### BluetoothDevice.watchAdvertisments() 
+A Promise that resolves to undefined or is rejected with an error if advetisments can’t shown for any reason.
+#### BluetoothDevice.unwatchAdvertisments() 
+Stops watching for advertisments.
+#### BluetoothDevice.connectGATT()  
+A Promise that resolves to an instance of BluetoothGATTRemoteServer.
+
 ## Examples
 #### Find a bluetooth device
 
