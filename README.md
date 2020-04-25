@@ -82,5 +82,7 @@ A predigested Web APIs guide.
 
 <a href="./Web GL/README.md" target="_self">WebGL</a>
 
+<a href="./Web Socket/README.md" target="_self">Web Socket</a>
+
 <a href="./Web Workers/README.md" target="_self">Web Workers</a>
 
