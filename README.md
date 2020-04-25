@@ -73,6 +73,7 @@ A predigested Web APIs guide.
 <a href="./Resize Observer/README.md" target="_self">Resize Observer</a>
 
 ### U
+<a href="./URL/README.md" target="_self">URL</a>
 
 <a href="./URLSearchParams/README.md" target="_self">URLSearchParams</a>
 
