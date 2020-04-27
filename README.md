@@ -10,6 +10,8 @@ A predigested Web APIs guide.
 
 <a href="./Bluetooth/README.md" target="_self">Bluetooth</a>
 
+<a href="./Broadcast Channel/README.md" target="_self">Broadcast Channel</a>
+
 <a href="./Blob/README.md" target="_self">Blob</a>
 
 ### C
