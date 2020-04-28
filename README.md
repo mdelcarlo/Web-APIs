@@ -31,6 +31,10 @@ A predigested Web APIs guide.
 
 <a href="./Document Object Model (DOM)/README.md" target="_self">Document Object Model (DOM)</a>
 
+### E
+
+<a href="./Encrypted Media Extensions/README.md" target="_self">Encrypted Media Extensions</a>
+
 ### F
 
 <a href="./Fetch/README.md" target="_self">Fetch</a>
