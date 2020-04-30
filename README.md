@@ -43,6 +43,8 @@ A predigested Web APIs guide.
 
 <a href="./FormData/README.md" target="_self">FormData</a>
 
+<a href="./Fullscreen/README.md" target="_self">Fullscreen</a>
+
 ### G
 
 <a href="./Geolocation/README.md" target="_self">Geolocation</a>
