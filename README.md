@@ -8,6 +8,8 @@ A predigested Web APIs guide.
 
 <a href="./Batery Status/README.md" target="_self">Batery Status</a>
 
+<a href="./Beacon/README.md" target="_self">Beacon</a>
+
 <a href="./Bluetooth/README.md" target="_self">Bluetooth</a>
 
 <a href="./Broadcast Channel/README.md" target="_self">Broadcast Channel</a>
