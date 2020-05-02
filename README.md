@@ -1,9 +1,11 @@
 # Web-APIs
+
 A predigested Web APIs guide.
 
 ## APIs
 
 ### B
+
 <a href="./Background Tasks/README.md" target="_self">Background Tasks</a>
 
 <a href="./Batery Status/README.md" target="_self">Batery Status</a>
@@ -17,6 +19,7 @@ A predigested Web APIs guide.
 <a href="./Blob/README.md" target="_self">Blob</a>
 
 ### C
+
 <a href="./Cache/README.md" target="_self">Cache</a>
 
 <a href="./Canvas/README.md" target="_self">Canvas</a>
@@ -66,14 +69,16 @@ A predigested Web APIs guide.
 <a href="./Intersection Observer/README.md" target="_self">Intersection Observer</a>
 
 ### N
+
 <a href="./Network Information/README.md" target="_self">Network Information</a>
 
 <a href="./Notifications/README.md" target="_self">Notifications</a>
 
 ### P
 
-<a href="./Performance/README.md" target="_self">Performance</a>
+<a href="./Payment Request /README.md" target="_self">Payment Request </a>
 
+<a href="./Performance/README.md" target="_self">Performance</a>
 
 <a href="./Permissions/README.md" target="_self">Permissions</a>
 
@@ -84,6 +89,7 @@ A predigested Web APIs guide.
 <a href="./Resize Observer/README.md" target="_self">Resize Observer</a>
 
 ### U
+
 <a href="./URL/README.md" target="_self">URL</a>
 
 <a href="./URLSearchParams/README.md" target="_self">URLSearchParams</a>
@@ -97,4 +103,3 @@ A predigested Web APIs guide.
 <a href="./Web Socket/README.md" target="_self">Web Socket</a>
 
 <a href="./Web Workers/README.md" target="_self">Web Workers</a>
-
