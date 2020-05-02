@@ -38,3 +38,134 @@ Represents the user changing payment instrument (e.g., switching from a credit c
 An object returned after the user selects a payment method and approves a payment request.
 MerchantValidationEvent
 Represents the browser requiring the merchant (website) to validate themselves as allowed to use a particular payment handler (e.g., registered as allowed to use Apple Pay).
+
+## The basics of making a payment
+
+This section details the basics of using the Payment Request API to make a payment.
+
+Note: The code snippets from this section are from our Feature detect support demo.
+
+#### Creating a new payment request object
+
+A payment request always starts with the creation of a new PaymentRequest object — using the PaymentRequest() constructor. This takes two mandatory parameters and one option parameter:
+
+methodData — an object containing information concerning the payment provider, such as what payment methods are supported, etc.
+details — an object containing information concerning the specific payment, such as the total payment amount, tax, shipping cost, etc.
+options (optional) — an object containing addtional options related to the payment.
+So for example, you could create a new PaymentRequest instance like so:
+
+```js
+var request = new PaymentRequest(buildSupportedPaymentMethodData(),
+                                 buildShoppingCartDetails());
+The functions invoked inside the constructor simply return the required object parameters:
+
+function buildSupportedPaymentMethodData() {
+  // Example supported payment methods:
+  return [{
+    supportedMethods: 'basic-card',
+    data: {
+      supportedNetworks: ['visa', 'mastercard'],
+      supportedTypes: ['debit', 'credit']
+    }
+  }];
+}
+
+function buildShoppingCartDetails() {
+  // Hardcoded for demo purposes:
+  return {
+    id: 'order-123',
+    displayItems: [
+      {
+        label: 'Example item',
+        amount: {currency: 'USD', value: '1.00'}
+      }
+    ],
+    total: {
+      label: 'Total',
+      amount: {currency: 'USD', value: '1.00'}
+    }
+  };
+}
+```
+
+#### Starting the payment process
+
+Once the PaymentRequest object has been created, you call the PaymentRequest.show() method on it to initiate the payment request. This returns a promise that fulfills with a PaymentResponse object if the payment is successful:
+
+```js
+request.show().then(function(paymentResponse) {
+  // Here we would process the payment. For this demo, simulate immediate success:
+  paymentResponse.complete("success").then(function() {
+    // For demo purposes:
+    introPanel.style.display = "none";
+    successPanel.style.display = "block";
+  });
+});
+```
+
+This object provides the developer with access to details they can use to complete the logical steps required after the payment completes, such as an email address to contact the customer, a shipping address for mailing goods out to them, etc. In the code above, you'll see that we've called the PaymentResponse.complete() method to signal that the interaction has finished — you'd use this to carry out finishing steps, like updating the user interface to tell the user the transaction is complete, etc.
+
+Other useful payment request methods
+There are some other useful payment request methods worth knowing about.
+
+PaymentRequest.canMakePayment() can be used to check whether the PaymentRequest object is capable of making a payment before you start the payment process. It returns a promise that fulfills with a boolean indicating whether it is or not, for example:
+
+```js
+// Dummy payment request to check whether payment can be made
+new PaymentRequest(buildSupportedPaymentMethodData(), {
+  total: { label: "Stub", amount: { currency: "USD", value: "0.01" } }
+})
+  .canMakePayment()
+  .then(function(result) {
+    if (result) {
+      // Real payment request
+      var request = new PaymentRequest(
+        buildSupportedPaymentMethodData(),
+        checkoutObject
+      );
+
+      request.show().then(function(paymentResponse) {
+        // Here we would process the payment.
+        paymentResponse.complete("success").then(function() {
+          // Finish handling payment
+        });
+      });
+    }
+  });
+```
+
+PaymentRequest.abort() can be used to abort the payment request if required.
+
+Detecting availability of the Payment Request API
+You can effectively detect support for the Payment Request API by checking if the user's browser supports PaymentRequest, i.e. if (window.PaymentRequest).
+
+In the following snippet, a merchant page performs this check, and if it returns true updates the checkout button to use PaymentRequest instead of legacy web forms.
+
+```js
+const checkoutButton = document.getElementById("checkout-button");
+if (window.PaymentRequest) {
+  let request = new PaymentRequest(
+    buildSupportedPaymentMethodNames(),
+    buildShoppingCartDetails()
+  );
+  checkoutButton.addEventListener("click", function() {
+    request
+      .show()
+      .then(function(paymentResponse) {
+        // Handle successful payment
+      })
+      .catch(function(error) {
+        // Handle cancelled or failed payment. For example, redirect to
+        // the legacy web form checkout:
+        window.location.href = "/legacy-web-form-checkout";
+      });
+    // Every click on the checkout button should use a new instance of
+    // PaymentRequest object, because PaymentRequest.show() can be
+    // called only once per instance.
+    request = new PaymentRequest(
+      buildSupportedPaymentMethodNames(),
+      buildShoppingCartDetails()
+    );
+  });
+}
+```
