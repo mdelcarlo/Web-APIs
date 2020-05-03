@@ -143,7 +143,7 @@ function removeNode(node)
 Replace a specific node accesing a parent and using replaceChild.
 
 ```js
-function removeNode(node)
+function replaceNode(node)
 {
     node.parentNode && node.parentNode.replaceChild(newNode, node);
 }
